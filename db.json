@@ -1,0 +1,30 @@
+{
+  "seller": [
+    {
+      "id": "551c",
+      "name": "Anil Sidhu",
+      "email": "anil@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b95f",
+      "name": "Sam Sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "fefc",
+      "data": {
+        "name": "fsd",
+        "password": "dadasdsad",
+        "email": "fsd@gmail.com"
+      }
+    },
+    {
+      "id": "a93d",
+      "name": "habban",
+      "password": "habban@123",
+      "email": "habban@test.com"
+    }
+  ]
+}
