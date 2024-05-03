@@ -13,18 +13,34 @@
       "password": "abc@123"
     },
     {
-      "id": "fefc",
-      "data": {
-        "name": "fsd",
-        "password": "dadasdsad",
-        "email": "fsd@gmail.com"
-      }
-    },
-    {
       "id": "a93d",
       "name": "habban",
       "password": "habban@123",
       "email": "habban@test.com"
+    },
+    {
+      "id": "bff9",
+      "name": "fsd2",
+      "password": "fdfdfdg",
+      "email": "fsd2@test.com"
+    },
+    {
+      "id": "6964",
+      "name": "tabish",
+      "password": "cxz",
+      "email": "habbanraza@gmail.com"
+    },
+    {
+      "id": "a939",
+      "name": "maaz",
+      "password": "maaz123",
+      "email": "maaz@gmail.com"
+    },
+    {
+      "id": "bdcb",
+      "name": "tabish",
+      "password": "fdsfcscfxc",
+      "email": "muhammadtabish@paz.agency"
     }
   ]
 }
