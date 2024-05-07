@@ -41,6 +41,62 @@
       "name": "tabish",
       "password": "fdsfcscfxc",
       "email": "muhammadtabish@paz.agency"
+    },
+    {
+      "id": "0ec7",
+      "name": "tabish2",
+      "email": "tabis2h@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "99ef",
+      "email": "tabis2h@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "bc99",
+      "email": "tabis2h@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b201",
+      "email": "anil@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "6776",
+      "email": "anil@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "5db9",
+      "email": "habbanraza@gmail.com",
+      "password": "zczcxc"
+    },
+    {
+      "id": "d058",
+      "email": "sdsds",
+      "password": "asdadsad"
+    }
+  ],
+  "products": [
+    {
+      "id": "a881",
+      "name": "iphone14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "image": "https://modernelectronics.pk/cdn/shop/files/Artboard1_grande_4c8657e3-3037-4b94-a95d-27299e883d2f.jpg?v=1699720505&width=600",
+      "description": "dkfncskdfmskmcs,dmcx"
+    },
+    {
+      "id": "a4b3",
+      "name": "samsung",
+      "price": "120000",
+      "color": "SILVER",
+      "category": "mobiles",
+      "description": "s23",
+      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review-1024x691.jpg"
     }
   ]
 }

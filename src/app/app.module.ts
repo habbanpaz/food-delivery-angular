@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PractiseReactiveComponent } from './practise-reactive/practise-reactive.component';
 import { AppRoutingModule } from './app.routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { ProductService } from './services/product.service';
 
 
 
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    PractiseReactiveComponent
+    PractiseReactiveComponent,
+    SellerAddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

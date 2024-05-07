@@ -31,3 +31,11 @@ body{
     cursor: pointer;
 }
 
+.error-p{
+    color: red;
+}
+
+.p-message{
+    color: green;
+}
+
