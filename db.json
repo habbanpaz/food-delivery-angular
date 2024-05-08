@@ -81,22 +81,13 @@
   ],
   "products": [
     {
-      "id": "a881",
-      "name": "iphone14",
-      "price": "100000",
-      "category": "mobile",
-      "color": "black",
-      "image": "https://modernelectronics.pk/cdn/shop/files/Artboard1_grande_4c8657e3-3037-4b94-a95d-27299e883d2f.jpg?v=1699720505&width=600",
-      "description": "dkfncskdfmskmcs,dmcx"
-    },
-    {
-      "id": "a4b3",
-      "name": "samsung",
-      "price": "120000",
-      "color": "SILVER",
-      "category": "mobiles",
-      "description": "s23",
-      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review-1024x691.jpg"
+      "id": "7a23",
+      "name": "iphone 14",
+      "price": "200000",
+      "color": "white",
+      "category": "apple",
+      "description": "very baap phone",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-3.jpg"
     }
   ]
 }

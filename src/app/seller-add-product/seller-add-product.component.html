@@ -1,6 +1,6 @@
 <div class="add-product">
     <h1>Add New Product</h1>
-    <p class="p-message">Product is successfully added</p>
+    <p class="p-message">{{addProductMessage}}</p>
     <form #addProduct="ngForm" class="common-form"
     (ngSubmit)="submit(addProduct.value)">
 

@@ -7,6 +7,7 @@ import { Product } from '../data-type';
   templateUrl: './seller-add-product.component.html',
   styleUrls: ['./seller-add-product.component.css']
 })
+
 export class SellerAddProductComponent implements OnInit {
   addProductMessage:string|undefined;
   constructor(private product:ProductService) { }
