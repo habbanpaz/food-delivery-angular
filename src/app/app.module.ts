@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { ProductService } from './services/product.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import {SellerUpdateProductComponent} from './seller-update-product/seller-update-product.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SellerAuthComponent,
     SellerHomeComponent,
     PractiseReactiveComponent,
-    SellerAddProductComponent
+    SellerAddProductComponent,
+    SellerUpdateProductComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   
   providers: [ProductService],

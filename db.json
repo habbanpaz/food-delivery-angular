@@ -81,13 +81,13 @@
   ],
   "products": [
     {
-      "id": "7a23",
-      "name": "iphone 14",
+      "name": "Iphone 14",
       "price": "200000",
-      "color": "white",
       "category": "apple",
-      "description": "very baap phone",
-      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-3.jpg"
+      "color": "black",
+      "description": "\nThe iPhone 14, anticipated to be the next iteration in Apple's flagship smartphone lineup, is expected to feature significant advancements",
+      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review-1024x691.jpg",
+      "id": "b68e"
     }
   ]
 }
