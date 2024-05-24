@@ -81,13 +81,40 @@
   ],
   "products": [
     {
+      "id": "b68e",
       "name": "Iphone 14",
       "price": "200000",
       "category": "apple",
       "color": "black",
-      "description": "\nThe iPhone 14, anticipated to be the next iteration in Apple's flagship smartphone lineup, is expected to feature significant advancements",
-      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review-1024x691.jpg",
-      "id": "b68e"
+      "description": "The iPhone 14, anticipated to be the next iteration in Apple's flagship smartphone lineup, is expected to feature significant advancements",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-3.jpg"
+    },
+    {
+      "id": "bf39",
+      "name": "Realme c67",
+      "price": "120000",
+      "category": "android",
+      "color": "white",
+      "description": "This is realme c67",
+      "image": "https://static2.realme.net/images/realme-c67/banner/green.png"
+    },
+    {
+      "id": "ce78",
+      "name": "Realme 7pro",
+      "price": "50000",
+      "color": "blue",
+      "category": "android",
+      "description": "this is also real me",
+      "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7-pro-1.jpg"
+    },
+    {
+      "id": "337e",
+      "name": "Samsung Galaxy s23 ultra",
+      "price": "500000",
+      "category": "android",
+      "color": "black",
+      "description": "this is samsung",
+      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review-1024x691.jpg"
     }
   ]
 }

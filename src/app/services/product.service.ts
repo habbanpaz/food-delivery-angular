@@ -23,7 +23,6 @@ export class ProductService {
     return this.http.delete(`http://localhost:3000/products/${id}`);
   }
 
-
   
   getProduct(id: string) {
     return this.http.get<Product>(`http://localhost:3000/products/${id}`);
@@ -35,6 +34,7 @@ export class ProductService {
       product
     );
   }
+
   popularProducts() {
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=3');
   }
@@ -42,5 +42,10 @@ export class ProductService {
   trendyProducts() {
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
   }
+
+  searchProducts(query:string) {
+    return this.http.get<Product[]>(`http://localhost:3000/products?q=${query}`);
+  }
+
 
 }

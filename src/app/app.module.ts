@@ -13,8 +13,11 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
 import { ProductService } from './services/product.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {SellerUpdateProductComponent} from './seller-update-product/seller-update-product.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     SellerHomeComponent,
     PractiseReactiveComponent,
     SellerAddProductComponent,
-    SellerUpdateProductComponent
+    SellerUpdateProductComponent,
+    FooterComponent,
+    CartPageComponent,
+    CheckoutComponent,
+    UserAuthComponent
+    
     
   ],
   imports: [
