@@ -15,9 +15,21 @@ export class HeaderComponent implements OnInit {
   sellerName:string=''
   userName:string="";
   searchResult:undefined|Product[];
+  searchQuery: string = ''; // Search query
+  products: Product[] = []; // Array to hold all products
   cartItems=0;
 
-  constructor(private route: Router, private product:ProductService) { }
+  constructor(private route: Router, private product:ProductService) {
+    this.product.productList().subscribe({
+      next: (products: Product[]) => {
+        this.products = products;
+      },
+      error: (error) => {
+        // Handle error
+        console.error(error);
+      }
+    });
+   }
 
   ngOnInit(): void {
     this.route.events.subscribe((val:any)=>{
@@ -36,6 +48,17 @@ export class HeaderComponent implements OnInit {
         }
       }
     })
+  }
+
+  searchProducts() {
+    if (this.searchQuery.trim() !== '') {
+      // Filter products based on the search query
+      this.products = this.products.filter(product =>
+        Object.values(product).some(value =>
+          value.toString().toLowerCase().includes(this.searchQuery.toLowerCase())
+        )
+      );
+    }
   }
 
   logout(){

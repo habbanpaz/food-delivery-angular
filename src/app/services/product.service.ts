@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product } from '../data-type';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class ProductService {
     return this.http.post('http://localhost:3000/products',data)
   }
 
-  productList(){
+  productList(): Observable<Product[]> {
     return this.http.get<Product[]>('http://localhost:3000/products')
   }
 
@@ -43,9 +44,10 @@ export class ProductService {
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
   }
 
-  searchProducts(query:string) {
+  searchProducts(query: string): Observable<Product[]> {
     return this.http.get<Product[]>(`http://localhost:3000/products?q=${query}`);
   }
+  
 
 
 }

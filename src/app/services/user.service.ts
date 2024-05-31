@@ -20,10 +20,9 @@ export class UserService {
        localStorage.setItem('user',JSON.stringify(result.body));
        this.router.navigate(['/']);
      }
-     
-    })
-     
+    })  
    }
+
    userLogin(data:Login){
      this.http.get<SignUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,
      {observe:'response'}
