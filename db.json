@@ -90,16 +90,14 @@
       "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o"
     },
     {
-      "id": 3,
       "name": "HP Laptop",
       "price": "50000",
       "category": "Laptop",
       "color": "black",
       "description": "Hp laptop for student and professionals",
-      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg"
+      "image": "https://static3.webx.pk/files/4012/Images/c08611403-4012-1887426-111023013002304.jpg",
+      "id": 3
     },
-  
-
     {
       "id": 7,
       "name": "Noise Smart Watch",

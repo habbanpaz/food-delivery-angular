@@ -44,7 +44,7 @@ export class ProductService {
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
   }
 
-  searchProducts(query: string): Observable<Product[]> {
+  searchProducts(query: string) {
     return this.http.get<Product[]>(`http://localhost:3000/products?q=${query}`);
   }
   

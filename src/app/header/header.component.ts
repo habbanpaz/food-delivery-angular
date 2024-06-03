@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router'
+import { Router } from '@angular/router'
 import { Product } from '../data-type';
 import { ProductService } from '../services/product.service';
 ProductService
@@ -11,59 +11,62 @@ ProductService
 })
 
 export class HeaderComponent implements OnInit {
-  menuType: String='default'
-  sellerName:string=''
-  userName:string="";
-  searchResult:undefined|Product[];
+  menuType: String = 'default'
+  sellerName: string = ''
+  userName: string = "";
+  searchResult: undefined | Product[];
   searchQuery: string = ''; // Search query
   products: Product[] = []; // Array to hold all products
-  cartItems=0;
+  cartItems = 0;
 
-  constructor(private route: Router, private product:ProductService) {
-    this.product.productList().subscribe({
-      next: (products: Product[]) => {
-        this.products = products;
-      },
-      error: (error) => {
-        // Handle error
-        console.error(error);
-      }
-    });
-   }
+  constructor(private route: Router, private product: ProductService) { }
 
   ngOnInit(): void {
-    this.route.events.subscribe((val:any)=>{
+    this.route.events.subscribe((val: any) => {
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           console.warn("in seller area")
           if (localStorage.getItem('seller')) {
-            let sellerStore=localStorage.getItem('seller')
+            let sellerStore = localStorage.getItem('seller')
             let sellerData = sellerStore && JSON.parse(sellerStore)[0]
-            this.menuType='seller'
+            this.menuType = 'seller'
             this.sellerName = sellerData.name;
           }
-        }else{
+        } else {
           console.warn("outside the seller's area")
-          this.menuType='default'
+          this.menuType = 'default'
         }
       }
     })
   }
 
-  searchProducts() {
-    if (this.searchQuery.trim() !== '') {
-      // Filter products based on the search query
-      this.products = this.products.filter(product =>
-        Object.values(product).some(value =>
-          value.toString().toLowerCase().includes(this.searchQuery.toLowerCase())
-        )
-      );
+  searchProducts(query: KeyboardEvent) {
+    if (query) {
+      const element = query.target as HTMLInputElement
+      this.product.searchProducts(element.value).subscribe((result) => {
+        if (result.length > 5) { result.length = 5 }
+        this.searchResult = result
+      })
     }
   }
 
-  logout(){
+  logout() {
     localStorage.removeItem('seller')
     this.route.navigate(['/']);
+  }
+
+  hideSearch() {
+    this.searchResult = undefined
+
+  }
+
+  submitSearch(val:string){
+    console.warn(val)
+    this.route.navigate([`search/${val}`])
+  }
+
+  redirectToDetails(id:number){
+    this.route.navigate(['/details/'+id])
   }
 
 }
