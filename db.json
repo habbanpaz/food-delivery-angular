@@ -49,34 +49,10 @@
       "password": "abc@123"
     },
     {
-      "id": "99ef",
-      "email": "tabis2h@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "bc99",
-      "email": "tabis2h@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "b201",
-      "email": "anil@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "6776",
-      "email": "anil@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "5db9",
-      "email": "habbanraza@gmail.com",
-      "password": "zczcxc"
-    },
-    {
-      "id": "d058",
-      "email": "sdsds",
-      "password": "asdadsad"
+      "name": "Yasir",
+      "password": "yasir123",
+      "email": "yasir@gmail.com",
+      "id": "4LafOfu"
     }
   ],
   "products": [
